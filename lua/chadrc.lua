@@ -28,16 +28,16 @@ M.ui = {
   telescope = { style = "borderless" }, -- borderless / bordered
   cmp = {
     lspkind_text = true,
-    style = "default", -- default/flat_light/flat_dark/atom/atom_colored
+    style = "atom_colored", -- default/flat_light/flat_dark/atom/atom_colored
     format_colors = {
       tailwind = true,
     },
   },
   statusline = {
-    theme = "minimal", -- default/vscode/vscode_colored/minimal
+    theme = "default", -- default/vscode/vscode_colored/minimal
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
-    separator_style = "round",
+    separator_style = "arrow",
     order = {
       "mode",
       "file",
@@ -137,9 +137,9 @@ M.mason = {
 M.lsp = { signature = false }
 
 M.base46 = {
-  theme = "material-deep-ocean",
+  theme = "catppuccin",
   transparency = false,
-  theme_toggle = { "material-deep-ocean", "one_light" },
+  theme_toggle = { "catppuccin", "rosepine-dawn" },
   hl_override = highlights.override,
   hl_add = highlights.add,
   integrations = {
